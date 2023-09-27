@@ -10,11 +10,11 @@ This tutorial guides you through the creation of open educational resources (OER
     * [Requirements](#requirements)
 
   * [Create a project](#create-a-project)
-  * [Enable automatic generation](#enable-automatic-generation)
-  * [Upload your own content](#upload-content)
-  * [Update the metadata](#update-the-metadata)    
+  * [Generate output](#generate-output)
+  * [Fill with your own content](#fill-with-content)
+  * [Add your metadata](#add-your-metadata)
   * [Configuration options](#configuration-options)
-  * [Insert the course in OERSI](#insert-your-coursedocument-in-oersi)
+  * [Insert the course in OERSI](#insert-your-oer-in-oersi)
 
 > After completing this tutorial, you will have an automatically generated OER with your own content and metadata, published on GitHub for free and ready to be put into our OER search index [OERSI](https://oersi.org).
 
@@ -95,11 +95,11 @@ The step by step tutorial consists of the following steps, which you can click t
 
 * [Requirements](#requirements)
 * [Create a project](#create-a-project)
-* [Enable automatic generation](#enable-automatic-generation)
-* [Upload your own content](#upload-content)
-* [Update the metadata](#update-the-metadata)    
+* [Generate Output](#generate-output)
+* [Fill with your own content](#fill-with-content)
+* [Add your metadata](#add-your-metadata)
 * [Configuration options](#configuration-options)
-* [Insert the course in OERSI](#insert-your-coursedocument-in-oersi)
+* [Insert the course in OERSI](#insert-your-oer-in-oersi)
 
 ### Requirements
 
@@ -146,7 +146,7 @@ Now, a new repository is initialized for you containing the contents from the te
 
 </section>
 
-### Enable automatic generation
+### Generate output
 
 <section>
 
@@ -172,7 +172,7 @@ Congratulations, you now have a complete course/document that you can make your 
 
 </section>
 
-### Upload content
+### Fill with content
 
 <section>
 
@@ -197,7 +197,7 @@ By default, the automatic generator will look for all markdown files (so those e
 
 </section>
 
-### Update the metadata
+### Add your metadata
 
 <section>
 
