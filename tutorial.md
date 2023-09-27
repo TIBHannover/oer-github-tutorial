@@ -86,6 +86,8 @@ Lastly, enable the automatic generation of your OER. To do this, go to the proje
 ### Done!
 At the front page of your repository, inside the `README.md` content, there are several links you can use to view your generated documents. Click on the `landing page` link to view a page that lists metadata about your OER and supplies several links to different output formats (like a web version, a pdf version, ...).
 
+> You can insert your OER into the OER search index [oersi.org](https://oersi.org). To learn how to do this, head over to the section [Insert the course in OERSI](#insert-your-coursedocument-in-oersi).
+
 </section>
 
 ## Step by step tutorial
