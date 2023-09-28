@@ -1,13 +1,26 @@
 creativeWorkStatus: Published
 name: OER GitHub Tutorial
 description: >-
-  This tutorial shows how to easily publish OER on GitHub using a simple
-  template.
+  This tutorial shows how to easily publish OER on GitHub using a template.
+
+  By following just a few simple steps, you can create your own OER, publish it
+  for free on GitHub, include it in our OER search index OERSI and always have
+  up-to-date generated documents automatically created for you by the template
+  in under five minutes!
 license:
   id: https://creativecommons.org/licenses/by/4.0/deed.de
+id: >-
+  https://liascript.github.io/course/?https://raw.githubusercontent.com/TIBHannover/oer-github-tutorial/main/tutorial.md#1
 creator:
-  - name: Technische Informationsbibliothek Hannover
-    type: Organization
+  - givenName: Sophie
+    familyName: Matter
+    type: Person
+    affiliation:
+      name: >-
+        Technische Informationsbibliothek (TIB) - Leibniz-Informationszentrum
+        Technik und Naturwissenschaften - Universitätsbibliothek
+      id: https://ror.org/04aj4c181
+      type: Organization
 keywords:
   - OER
   - Git
@@ -15,6 +28,8 @@ keywords:
   - Tutorial
 inLanguage:
   - en
+image: >-
+  https://raw.githubusercontent.com/TIBHannover/oer-github-tutorial/main/img/preview.png
 learningResourceType:
   - https://w3id.org/kim/hcrt/course
 educationalLevel:
