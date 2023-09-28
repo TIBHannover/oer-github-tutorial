@@ -1,0 +1,22 @@
+creativeWorkStatus: Published
+name: OER GitHub Tutorial
+description: >-
+  This tutorial shows how to easily publish OER on GitHub using a simple
+  template.
+license:
+  id: https://creativecommons.org/licenses/by/4.0/deed.de
+creator:
+  - name: Technische Informationsbibliothek Hannover
+    type: Organization
+keywords:
+  - OER
+  - Git
+  - GitHub
+  - Tutorial
+inLanguage:
+  - en
+learningResourceType:
+  - https://w3id.org/kim/hcrt/course
+educationalLevel:
+  - https://w3id.org/kim/educationalLevel/level_A
+datePublished: '2023-09-28'
