@@ -38,7 +38,7 @@ Assign the repository's owner to yourself (or to a group of your choice, if you 
 Make sure that the repository is set to **public**.
 Lastly, confirm by clicking on **Create repository from template**.
 
-![Create repository from template](img/create-repository.png)
+!?[Create repository from template](videos/create-from-template.mp4)
 
 ### 3. Fill the project with your content
 
@@ -53,30 +53,20 @@ Currently, you have the template's dummy data in your repository. You can edit a
 
 You can start by edititing `chapter01.md`. Click on the file, the in the top right corner, click on the pen symbol ("Edit this file"). You can delete the file's content and start writing something of your own.
 
-![Choose the file](img/edit-file-1.png)
-
-![Edit the file](img/edit-file-2.png)
-
 Now, in the top right corner, click on the green "Commit changes..." button. Write a short message on what you have changed ("Commit message"), if you want a longer description, and now click on the green "Commit changes" button.
-
-![Commit changes](img/commit-changes-1.png)
-
-![Commit changes](img/commit-changes-2.png)
 
 You can also choose to create or delete files. If you do not want the four chapter files that were created by the template, you can click on the file, click on the three dots on the top right of the file, and then on "Delete file". To upload files, you can click on the "Add file" button in your repository.
 
 ### 4. Add your metadata
 Go to our [Metadata Generator]() and insert the metadata that describes your OER. In the top right corner, you have the option to switch the language between **German** ("DE") and **English** ("EN").
 
-![Metadata generator](img/metadata-form.png "Metadata Generator")
-
 Once you are done, click on the "Generate" button in the bottom of the page. The metadata is now generated in a format our template understands. Now copy everything to your clipboard. For this, you can click on "Copy".
-
-![Copy output to clipboard](img/metadata-copy-to-clipboard.png)
 
 In your repository, click on the `metadata.yml` file and then on the pen symbol ("Edit this file") to edit the file. Delete the file's contents and paste the metadata from your clipboard. Now click on the green "Commit changes..." button and confirm with "Commit changes".
 
 Now at the bottom of the page, you can click on `Generate`. This generates the metadata in the correct format. You can then copy the output to your clipboard either by using the `Copy` button, or by selecting the whole text (`Ctrl + A`) and copying it (`Ctrl + C`).
+
+!?[Add metadata](videos/metadata-placeholder.mp4)
 
 ### 5. Generate the OER
 > The automatic generation will take your content and generate different output formats.
@@ -86,7 +76,7 @@ Lastly, enable the automatic generation of your OER. To do this, go to the proje
 ### Done!
 At the front page of your repository, inside the `README.md` content, there are several links you can use to view your generated documents. Click on the `landing page` link to view a page that lists metadata about your OER and supplies several links to different output formats (like a web version, a pdf version, ...).
 
-> You can insert your OER into the OER search index [oersi.org](https://oersi.org). To learn how to do this, head over to the section [Insert the course in OERSI](#insert-your-coursedocument-in-oersi).
+> To insert your OER into the OER search index [oersi.org](https://oersi.org), head to the `About` section in the index of your repository, click on the settings symbol and add `open-educational-resources` to `Topics`. Your course will be indexed at night and appear on the next day.
 
 </section>
 
@@ -137,6 +127,8 @@ To see basic formatting options, check out the [Cheat Sheet](https://www.markdow
 
 Once you are logged into GitHub, go to the [TIB Hannover markdown documents template repository](https://github.com/TIBHannover/markdown-documents-template) and click on "Use this template" -> "Create a new repository".
 
+![Create repository](img/create-repository.png)
+
 Assign the repository to the correct owner and give it a short but meaningful name. The name will be the URL of the repository as well. You can add a description if you want. Now make sure that the visibility of the repository is set to **public**. This has two main reasons: firstly, so people can see your OER, and secondly to use the GitHub pages functionality which we will get to later. Lastly, confim by clicking on "Create repository from template".
 
 Now, a new repository is initialized for you containing the contents from the template.
@@ -184,16 +176,37 @@ In the repository, you can find four `chapterXX.md` files. These are our dummy c
 You can either edit or delete them. You can of course create new files, too.
 If you create new files, make sure that they end with the correct file format ending `.md`, so `filename.md`.
 
+To edit a file, click on the file name in the index of your repository.
+
+![Change content](img/edit-file-1.png)
+
+Then, in the top right corner of the file, click on the pen button to edit the file.
+
+![Change content](img/edit-file-2.png)
+
+Now, you can replace the content with your own. Add as much as you like.
+The file is a `Markdown` file, so you should write your content using this markup language.
+You can find more about Markdown in the [Markdown section](#markdown-1) in the reference part of this tutorial.
+
+Once you are done, you can save your changes by clicking on the green `Commit changes...` button in the top right corner.
+
+![Change content](img/commit-changes-1.png)
+
+Add a meaningful but short commit message, which is a message describing the changes you have made, and optionally a longer description.
+Then confirm by clicking the green `Commit changes` button.
+
+![Change content](img/commit-changes-2.png)
+
 ### Ensuring the correct order
 
-By default, the automatic generator will look for all markdown files (so those ending with `.md`) in the top-level of the repository except for the `README.md` file, order them alphabetically and create the different output formats with them. If you want to upload multiple content files, you will either have to:
+By default, the automatic generator will look for all Markdown files (so those ending with `.md`) in the top-level of the repository except for the `README.md` file, order them alphabetically and create the different output formats by appending them in this order. If you want to upload multiple content files, you will either have to:
 
 * adapt the names of the files so that they will be ordered correctly alphabetically, for example:
 
   * `01_Introduction.md`
   * `02_Some-Chapter.md`
   * ...
-* or you will have to list every file in the correct order in `config.yml`. You can learn more about that in the [Configuration options](#configuration-options) section.
+* or you will have to list every file in the correct order in `config.yml`. You can learn more about that in the [Configuration options](#configuration-options) section in the reference part of this tutorial.
 
 </section>
 
@@ -218,6 +231,37 @@ To save, click on `Commit changes...` in the top right corner. Confirm by clicki
 !?[Update the metadata](videos/metadata-placeholder.mp4)
 
 </section>
+
+### Insert your OER in OERSI
+> Let's assume that...
+>
+> * you have put your whole completed course or document content into the repository, and it's either ordered alphabetically or you have defined the correct order in the `config.yml` file,
+> * you have enabled the `Pages` for `GitHub Actions` and there are no errors during Action execution, thus you have a published Page that represents the current version of your repository,
+> * you have entered full and correct metadata, ensuring the license is correct and you are not violating another work's license with this license,
+> * inside your `metadata.yml` file, you have set your creative work status to `Published` and the educational level to `University`,
+>
+> **then you are ready to put your OER into OERSI!**
+
+To put your course into the Open Ecucational Resources Search Index (OERSI), head to the `About` settings in the index of your repository. Then in `Topics`, add `open-educational-resource`.
+
+![About settings](img/about.png)
+
+![Set the topic](img/about-topics.png)
+
+The [OERSI](https://oersi.org) updates its index every night. So you will be able to find your OER the next day either through the search bar or by filtering using the filters on the left (e.g. search for your name in `Author` or setting the `Provider` to GitHub to only show OER from GitHub).
+
+If you want to immediately see your OER in OERSI, you can use the [record updater](https://oersi.org/resources/pages/de/record_update/).
+
+### Done!
+Congratulations, you did it!
+
+If you want to learn more about what you can do with this template, you can continue with the [reference](#reference) part.
+
+## Reference
+> You have your OER in different output formats, complete with your own content and metadata and it is even already indexed in [oersi](https://oersi.org),
+> but you want to learn more about what you can do with this template?
+
+In this part of the tutorial, we highlight several configuration options, Markdown basics, workflows in GitHub and much more.
 
 ### Configuration options
 
@@ -278,21 +322,111 @@ Basically, just make sure the number of spaces is consistent throughout the whol
 
 </section>
 
-### Insert your OER in OERSI
-> Let's assume that...
->
-> * you have put your whole completed course or document content into the repository, and it's either ordered alphabetically or you have defined the correct order in the `config.yml` file,
-> * you have enabled the `Pages` for `GitHub Actions` and there are no errors during Action execution, thus you have a published Page that represents the current version of your repository,
-> * you have entered full and correct metadata, ensuring the license is correct and you are not violating another work's license with this license,
-> * inside your `metadata.yml` file, you have set your creative work status to `Published`,
->
-> **then you are ready to put your OER into OERSI!**
+### Markdown
+> For a good overview on what Markdown is and what you can do with it, you can check out the Markdown guide from Matt Cone:
+> 
+> * [What is Markdown and why should I use it?](https://www.markdownguide.org/getting-started/)
+> 
+> * [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 
-For that, head to OERSI's [record updater](https://oersi.org/resources/pages/de/record_update/) and paste the URL to your GitHub Page.
+<section>
 
+### Headings
+
+To create a heading, add number signs (`#`) in front of a word or phrase. The number of number signs you use should correspond to the heading level. For example, to create a heading level three (`<h3>`), use three number signs (e.g., `### My Header`) [[1](https://www.markdownguide.org/basic-syntax/)].
+
+<!-- data-type="none" -->
+| Heading level | How to write it | How it looks |
+|---|---|---|
+| Heading level 1 | # Heading level 1 | <h1>Heading level 1</h1> |
+| Heading level 2 | ## Heading level 2 | <h2>Heading level 2</h2> |
+| Heading level 3 | ### Heading level 3 | <h3>Heading level 3</h3> |
+| Heading level 4 | #### Heading level 4 | <h4>Heading level 4</h4> |
+| Heading level 5 | ##### Heading level 5 | <h5>Heading level 5</h5> |
+| Heading level 6 | ###### Heading level 6 | <h6>Heading level 6</h6> |
+
+### Markdown elements
+<!-- data-type="none" -->
+| Element | How to write it | How it looks |
+|---|---|---|
+| Bold | \*\*Bold text\*\* | **Bold text** |
+| Italic | \*Italicized text\* | *Italic text* |
+| Blockquote | > blockquote | To be seen at the top of this section |
+| Ordered list | 1. First item <br> 2. Second item | 1. First item <br> 2. Second item |
+| Unordered list | - First item <br> - Second item | - First item <br> - Second item |
+| Code | \`code\` | `code` |
+| Horizontal rule | \-\-\- | --- |
+| Link | [Link text](link url) | [Markdown Guide](https://www.markdownguide.org) |
+| Image | ![Alt text](image url) | ![Image showing the text placeholder](http://via.placeholder.com/50x50) |
+
+[1] Matt Cone, [markdownguide.org](https://www.markdownguide.org), [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+
+### Links to other sections
+
+You can link to sections within your document using the link syntax shown in the table above.
+The links are generated from the heading:
+
+* `# Heading` -> `#heading` (You can reference it like this: `[Heading](#heading)`)
+* `# Heading 1` -> `#heading-1`
+* `### Lower heading level!` -> `#lower-heading-level`
+
+You can also set custom links like this:
+
+`## My heading {#custom-id}`
+
+Now the link to this section is `#custom-id`.
+
+</section>
+
+### Git
+
+> This section only gives a short overview of Git.
+> If you want to learn more about it, check out the free online [Pro Git](https://git-scm.com/book/en/v2) textbook.
+
+<section>
+
+### What is Git and why should you use it?
+Have you ever worked on different versions of a document, or even with different people?
+Then you likely know how hard it is to keep track of changes, and how easy to accidentally overwrite them.
+Git is a tool that helps with that. It is a so-called *version control system*.
+To learn more about version control, you can check out the [Version Control section of the Pro Git book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control).
+
+### How does it work?
+
+</section>
+
+### Working offline
+
+<section>
+
+> If you want to work offline, using some kind of text editor (similar to working with Word on documents), some necessary steps and background knowledge are required.
+
+Since we are working with `Git` (see [Git section](#git) for more information), and want to publish our content on `GitHub` (see [GitHub section](#github)), we have to find a way to bring our offline work online.
+
+### Editors
+First off, let's talk about editors.
+
+Of course, you know text editors like *Word* or *LibreOffice*.
+However, for the automatic output generation used in this template, we need *plain text* that is easily readable for machines.
+This is why we are working with [Markdown](#markdown-1) to format our *plain text*.
+
+There are a lot of editors that help you with writing text using the Markdown syntax.
+On of the ways they help is by showing a rendered preview as you type.
+
+</section>
+
+### Immediate update in OERSI
 ![Record updater](img/record-updater.png)
 
-### Done!
-Congratulations, you did it! Now go search you course on [oersi.org](https://oersi.org)!
+### Different formats
 
-If you want to learn more about what you can do with this template, you can continue with the advanced tutorial.
+<section>
+
+> After following this tutorial, we have different output formats like a HTML version, a PDF version and so on.
+> We could, however, generate all kinds of different formats, for example a course format like this tutorial.
+
+This tutorial runs using `LiaScript`.
+
+### LiaScript
+
+</section>
