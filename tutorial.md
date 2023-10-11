@@ -13,7 +13,7 @@ This tutorial guides you through the creation of open educational resources (OER
   * [Generate output](#generate-output)
   * [Fill with your own content](#fill-with-content)
   * [Add your metadata](#add-your-metadata)
-  * [Insert the course in OERSI](#insert-your-oer-in-oersi)
+  * [Insert into OERSI](#insert-your-oer-in-oersi)
 * [Reference](#reference)
 
   * [Configuration options](#configuration-options)
@@ -64,7 +64,14 @@ Now, in the top right corner, click on the green "Commit changes..." button. Wri
 
 You can also choose to create or delete files. If you do not want the four chapter files that were created by the template, you can click on the file, click on the three dots on the top right of the file, and then on "Delete file". To upload files, you can click on the "Add file" button in your repository.
 
-### 4. Add your metadata
+### 4. Generate the OER
+> The automatic generation will take your content and generate different output formats.
+
+Lastly, enable the automatic generation of your OER. To do this, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished. The generated documents are now created.
+
+!?[Pages](videos/pages.mp4)
+
+### 5. Add your metadata
 Go to our [Metadata Generator]() and insert the metadata that describes your OER. In the top right corner, you have the option to switch the language between **German** ("DE") and **English** ("EN").
 
 Once you are done, click on the "Generate" button in the bottom of the page. The metadata is now generated in a format our template understands. Now copy everything to your clipboard. For this, you can click on "Copy".
@@ -74,11 +81,6 @@ In your repository, click on the `metadata.yml` file and then on the pen symbol 
 Now at the bottom of the page, you can click on `Generate`. This generates the metadata in the correct format. You can then copy the output to your clipboard either by using the `Copy` button, or by selecting the whole text (`Ctrl + A`) and copying it (`Ctrl + C`).
 
 !?[Add metadata](videos/metadata-placeholder.mp4)
-
-### 5. Generate the OER
-> The automatic generation will take your content and generate different output formats.
-
-Lastly, enable the automatic generation of your OER. To do this, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished. The generated documents are now created.
 
 ### Done!
 At the front page of your repository, inside the `README.md` content, there are several links you can use to view your generated documents. Click on the `landing page` link to view a page that lists metadata about your OER and supplies several links to different output formats (like a web version, a pdf version, ...).
@@ -96,7 +98,7 @@ The step by step tutorial consists of the following steps, which you can click t
 * [Fill with your own content](#fill-with-content)
 * [Add your metadata](#add-your-metadata)
 * [Configuration options](#configuration-options)
-* [Insert the course in OERSI](#insert-your-oer-in-oersi)
+* [Insert into OERSI](#insert-your-oer-in-oersi)
 
 ### Requirements
 
@@ -253,7 +255,7 @@ To save, click on `Commit changes...` in the top right corner. Confirm by clicki
 >
 > **then you are ready to put your OER into OERSI!**
 
-To put your course into the Open Ecucational Resources Search Index (OERSI), head to the `About` settings in the index of your repository. Then in `Topics`, add `open-educational-resource`.
+To put your course into the Open Ecucational Resources Search Index (OERSI), head to the `About` settings in the index of your repository. Then in `Topics`, add `open-educational-resources`.
 
 ![About settings](img/about.png)
 
@@ -261,7 +263,9 @@ To put your course into the Open Ecucational Resources Search Index (OERSI), hea
 
 The [OERSI](https://oersi.org) updates its index every night. So you will be able to find your OER the next day either through the search bar or by filtering using the filters on the left (e.g. search for your name in `Author` or setting the `Provider` to GitHub to only show OER from GitHub).
 
-If you want to immediately see your OER in OERSI, you can use the [record updater](https://oersi.org/resources/pages/de/record_update/).
+If you want to immediately see your changes in the OERSI, you can use the [record updater](https://oersi.org/resources/pages/de/record_update/).
+
+To take the OER out of OERSI, simply set the status (`creativeWorkStatus`) in the `metadata.yml` to `Draft` or `Incomplete` (or alternatively, you could remove the topic `open-educational-resources`).
 
 ### Done!
 Congratulations, you did it!
@@ -398,7 +402,7 @@ Now the link to this section is `#custom-id`.
 
 ### Git
 
-> This section only gives a short overview of Git.
+> This section only gives a brief overview of Git.
 > If you want to learn more about it, check out the free online [Pro Git](https://git-scm.com/book/en/v2) textbook.
 
 <section>
@@ -412,6 +416,8 @@ To learn more about version control, you can check out the [Version Control sect
 ### How does it work?
 You make changes to your files locally and eventually publish them online.
 So after you have made your changes, you "commit" these changes and "push" them to your repository.
+
+![The lifecycle of the status of your files](img/pro-git-git-basics.png "CC-BY-SA-NC Pro Git, https://git-scm.com/book/en/v2")
 
 </section>
 
