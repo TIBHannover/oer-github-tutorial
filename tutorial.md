@@ -10,8 +10,8 @@ This tutorial guides you through the creation of open educational resources (OER
     * [Requirements](#requirements)
 
   * [Create a project](#create-a-project)
-  * [Generate output](#generate-output)
   * [Fill with your own content](#fill-with-content)
+  * [Generate output](#generate-output)
   * [Add your metadata](#add-your-metadata)
   * [Insert into OERSI](#insert-your-oer-in-oersi)
 * [Reference](#reference)
@@ -94,8 +94,8 @@ The step by step tutorial consists of the following steps, which you can click t
 
 * [Requirements](#requirements)
 * [Create a project](#create-a-project)
-* [Generate Output](#generate-output)
 * [Fill with your own content](#fill-with-content)
+* [Generate Output](#generate-output)
 * [Add your metadata](#add-your-metadata)
 * [Configuration options](#configuration-options)
 * [Insert into OERSI](#insert-your-oer-in-oersi)
@@ -149,32 +149,6 @@ Now, a new repository is initialized for you containing the contents from the te
 
 </section>
 
-### Generate output
-
-<section>
-
-> The automatic generation will take your content (everything inside the `Markdown` files, so those ending with `.md`) and generate different output formats. For example, these include a **web page** and a **pdf** version of your OER and are publicly accessible. This generation is done each time you change something in your repository, so your content will always be up to date.
-
-In order to generate the different output formats for your OER, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished. The pages and documents are now created. They can be accessed by the link that appeared under the `deploy` step.
-
-Congratulations, you now have a complete course/document that you can make your own!
-
-#### What are Actions?
-
-> An `Action` is something that GitHub can execute with every commit (save) you make to the repository. This includes the generation of documents or pages, which we are using in this tutorial.
->
-> A more detailed explanation of GitHub Actions can be found here: [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
-
-#### What are Pages?
-> A `Page` is a public website hosted by GitHub. We can use GitHub Actions to automatically generate our website and then host it on GitHub Pages for everyone to see. You can either host your site for free on `your-username.github.io` or use your own costum domain.
->
->More information on GitHub Pages can be found here: [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
-
-### Video tutorial
-!?[Actions and Pages](videos/pages.mp4)
-
-</section>
-
 ### Fill with content
 
 <section>
@@ -220,6 +194,32 @@ By default, the automatic generator will look for all Markdown files (so those e
 * or you will have to list every file in the correct order in `config.yml`.
 
 You can learn more about that in the [Configuration options](#configuration-options) section in the reference part of this tutorial.
+
+</section>
+
+### Generate output
+
+<section>
+
+> The automatic generation will take your content (everything inside the `Markdown` files, so those ending with `.md`) and generate different output formats. For example, these include a **web page** and a **pdf** version of your OER and are publicly accessible. This generation is done each time you change something in your repository, so your content will always be up to date.
+
+In order to generate the different output formats for your OER, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished. The pages and documents are now created. They can be accessed by the link that appeared under the `deploy` step.
+
+Congratulations, you now have a complete course/document that you can make your own!
+
+#### What are Actions?
+
+> An `Action` is something that GitHub can execute with every commit (save) you make to the repository. This includes the generation of documents or pages, which we are using in this tutorial.
+>
+> A more detailed explanation of GitHub Actions can be found here: [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
+
+#### What are Pages?
+> A `Page` is a public website hosted by GitHub. We can use GitHub Actions to automatically generate our website and then host it on GitHub Pages for everyone to see. You can either host your site for free on `your-username.github.io` or use your own costum domain.
+>
+>More information on GitHub Pages can be found here: [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+
+### Video tutorial
+!?[Actions and Pages](videos/pages.mp4)
 
 </section>
 
