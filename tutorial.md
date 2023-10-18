@@ -273,6 +273,9 @@ Congratulations, you did it!
 If you want to learn more about what you can do with this template, you can continue with the [reference](#reference) part.
 
 ## Reference
+<!--  style="background-color:#ff5959;" -->
+> This part is still under construction.
+
 > You have your OER in different output formats, complete with your own content and metadata and it is even already indexed in [oersi](https://oersi.org),
 > but you want to learn more about what you can do with this template?
 
@@ -401,6 +404,8 @@ Now the link to this section is `#custom-id`.
 </section>
 
 ### Git
+<!--  style="background-color:#ff5959;" -->
+> This part is still under construction.
 
 > This section only gives a brief overview of Git.
 > If you want to learn more about it, check out the free online [Pro Git](https://git-scm.com/book/en/v2) textbook.
@@ -422,6 +427,8 @@ So after you have made your changes, you "commit" these changes and "push" them 
 </section>
 
 ### Working offline
+<!--  style="background-color:#ff5959;" -->
+> This part is still under construction.
 
 <section>
 
@@ -467,6 +474,8 @@ Insert the link to your GitHub repository or to the generated landing page of yo
 Then, click on update. Your OER should now be updated in the OERSI.
 
 ### Different formats
+<!--  style="background-color:#ff5959;" -->
+> This part is still under construction.
 
 <section>
 
