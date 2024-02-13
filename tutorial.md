@@ -74,7 +74,7 @@ Lastly, enable the automatic generation of your OER. To do this, go to the proje
 !?[Pages](videos/pages.mp4)
 
 ### 5. Add your metadata
-Go to our [Metadata Generator]() and insert the metadata that describes your OER. In the top right corner, you have the option to switch the language between **German** ("DE") and **English** ("EN").
+Go to our [Metadata Generator](https://oersi.gitlab.io/metadata-form/metadata-generator.html) and insert the metadata that describes your OER. In the top right corner, you have the option to switch the language between **German** ("DE") and **English** ("EN").
 
 Once you are done, click on the "Generate" button in the bottom of the page. The metadata is now generated in a format our template understands. Now copy everything to your clipboard. For this, you can click on "Copy".
 
@@ -571,35 +571,39 @@ You can start out with a template supplied by the software itself.
 
 ## Troubleshooting
 
+<section>
+
 Something does not work?
 Maybe you find your issue right here.
 
-* [I do not see my changes](#i-do-not-see-my-changes)
-
 ### I do not see my changes
-
-<section>
 
 You have added your content and your metadata but can not see your changes in your landing page and generated documents?
 Following these steps might help you.
 
-#### 1. Delete your cache and reload your page/document
+1. Delete your cache and reload your page/document
+
 Often, the old version of the page is still loaded in your browser's cache.
 If you reload the page or document by hitting `Ctrl + F5` together, you can reload your page while deleting the cache of that page.
 You can also open your page or document in a new private tab or window, as the browser usually does not use its cache there.
 
-#### 2. Check your file names and content
+2. Check your file names and content
+
 Check if your file name contains characters like **spaces**. These are not allowed and cause the document generation to break.
 
 Also, ensure that there are no special characters like emojis or other unicode characters in your documents. Our document processor does not understand these characters, which also leads to breaking the document generation.
 
-#### 3. Check your media
+3. Check your media
+
 Sometimes, images or videos can cause the document generation to break.
 Usually, this happens when you use an unsupported format. Stick to widespread formats like `png` and `jpg` to be sure.
 
 </section>
 
+
 ## FAQ
+
+<section>
 
 ### Can I upload non-text files like PDF files?
 Yes, you can! Git however won't be able to track changes made to those files, it can only track _that_ it was changed.
@@ -626,3 +630,5 @@ When you go through your repository's files in GitHub, you see them embedded in 
 
 ### How can I create a new folder?
 You can not create an empty folder. This means you have to add files in GitHub *in* that new folder. Either create a new file and change the path to that new folder (i.e. instead of creating a new file `file.md`, write it with a new folder like `newfolder/file.md`, a new folder will be automatically created) or upload a non-empty folder.
+
+</section>
