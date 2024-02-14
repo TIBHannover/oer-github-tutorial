@@ -491,7 +491,7 @@ For example, this tutorial runs using LiaScript.
 
 Below you find a short list of several possible formats your OER could use. <br><br>
 
-<h3>[Markdown documents template](https://github.com/TIBHannover/markdown-documents-template)</h3>
+<h3><a href="https://github.com/TIBHannover/markdown-documents-template" target="_blank">Markdown documents template</a></h3>
 
 This is the template that is described in this tutorial.
 As you know by now, it takes your Markdown files, puts them together and generates different formats from them.
@@ -515,7 +515,7 @@ These formats are linked to and can be downloaded from the landing page that is 
 > ❌ Customizing can be tricky
 
 
-<h3>[Markdown slides template](https://github.com/TIBHannover/markdown-slides-template)</h3>
+<h3><a href="https://github.com/TIBHannover/markdown-slides-template" target="_blank">Markdown slides template</a></h3>
 
 The Markdown slides template is very similar to the Markdown documents template from this tutorial.
 But instead of creating a single text document, the slides template creates several slides.
@@ -538,7 +538,7 @@ For this, you create one Markdown file for one set of slides and the template ge
 > 
 > ❌ Needs a GitHub account
 
-<h3> [LiaScript](https://liascript.github.io)</h3>
+<h3><a href="https://liascript.github.io" target="_blank">LiaScript</a></h3>
 
 LiaScript takes a markdown file and automatically generates a course format from it.
 The tutorial you are currently viewing is actually made with LiaScript!
@@ -564,7 +564,7 @@ So all you really need is a Markdown file.
 > 
 > ❌ Including resources outside of Github might not work (to prevent cross-site-scripting attacks)
 
-<h3> [Static Site Generators](https://github.com/collections/static-site-generators)</h3>
+<h3><a href="https://github.com/collections/static-site-generators" target="_blank">Static Site Generators</a></h3>
 
 A static site generator generates a static site.
 Typically, it will be possible to also write your content using Markdown, but at the same time, you will be able to edit your layout and include more elements yourself which the static site generator then uses to create your web page.
@@ -580,7 +580,7 @@ You should also be familiar with the command line or using GitHub Actions yourse
 > 
 > ❌ Takes longer to get a first version running
 
-<h3> [JupyterBooks](https://jupyterbook.org/en/stable/intro.html)</h3>
+<h3><a href="https://jupyterbook.org/en/stable/intro.html" target="_blank"> JupyterBooks</a></h3>
 
 Jupyter Book is a free and open source tool to create online books.
 You can create sections and subsections that you can click through.
