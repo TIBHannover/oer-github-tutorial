@@ -480,8 +480,6 @@ Insert the link to your GitHub repository or to the generated landing page of yo
 Then, click on update. Your OER should now be updated in the OERSI.
 
 ### Different formats
-<!--  style="background-color:#ff5959;" -->
-> This part is still under construction.
 
 <section>
 
@@ -489,15 +487,120 @@ Then, click on update. Your OER should now be updated in the OERSI.
 > We could, however, generate all kinds of different formats, for example a course format like this tutorial.
 
 Using this template is not the only option to host OER using GitHub.
-For example, this tutorial runs using `LiaScript`.
+For example, this tutorial runs using LiaScript.
 
-Below you find a short list of several possible formats your OER could use:
+Below you find a short list of several possible formats your OER could use. <br><br>
 
-* [Markdown documents template](https://github.com/TIBHannover/markdown-documents-template) (as shown in this tutorial)
-* [Markdown slides template](https://github.com/TIBHannover/markdown-slides-template)
-* [LiaScript](https://liascript.github.io) (which this tutorial is made with)
-* [Static Site Generators](https://github.com/collections/static-site-generators)
-* [JupyterBooks](https://jupyterbook.org/en/stable/intro.html)
+<h3><a href="https://github.com/TIBHannover/markdown-documents-template" target="_blank">Markdown documents template</a></h3>
+
+This is the template that is described in this tutorial.
+As you know by now, it takes your Markdown files, puts them together and generates different formats from them.
+These formats are linked to and can be downloaded from the landing page that is generated using GitHub Actions and GitHub Pages.
+
+<!--  style="background-color:#fff;" -->
+> ✅ Easy setup with our template
+> 
+> ✅ Automatic generation of different formats
+> 
+> ✅ Can include executable elements
+> 
+> ✅ Always have the newest changes online
+> 
+> ✅ Automatically tracks changes made to your files
+> 
+> ✅ Easy collaboration with others
+> 
+> ❌ Needs a GitHub account
+> 
+> ❌ Customizing can be tricky
+
+
+<h3><a href="https://github.com/TIBHannover/markdown-slides-template" target="_blank">Markdown slides template</a></h3>
+
+The Markdown slides template is very similar to the Markdown documents template from this tutorial.
+But instead of creating a single text document, the slides template creates several slides.
+For this, you create one Markdown file for one set of slides and the template generates the slides in both HTML and PDF format and shows a list of all generated slides together with preview images in a GitHub Page.
+
+<!--  style="background-color:#fff;" -->
+> ✅ Easy automatically generated slides in two formats
+> 
+> ✅ Easy setup with our template
+> 
+> ✅ Automatic up to date overview page
+> 
+> ✅ Always have the newest changes online
+> 
+> ✅ Automatically tracks changes made to your files
+> 
+> ✅ Easy collaboration with others
+> 
+> ❌ Slides are only partly customizable
+> 
+> ❌ Needs a GitHub account
+
+<h3><a href="https://liascript.github.io" target="_blank">LiaScript</a></h3>
+
+LiaScript takes a markdown file and automatically generates a course format from it.
+The tutorial you are currently viewing is actually made with LiaScript!
+Or rather, the Markdown file this tutorial is written in is being interpreted by LiaScript, which therewith generated this course.
+So all you really need is a Markdown file.
+
+<!--  style="background-color:#fff;" -->
+> ✅ No installation, everything happens live & online
+> 
+> ✅ Easy to click through the different sections
+> 
+> ✅ Automatic translation into many different languages
+> 
+> ✅ Interactive elements and extended Markdown can be used
+> 
+> ❌ Only online, no download
+> 
+> ❌ Handling sections might be unintuitive (a new section starts a new subpage)
+> 
+> ❌ Only really suited for course/text/book formats
+> 
+> ❌ Only one Markdown file at a time
+> 
+> ❌ Including resources outside of Github might not work (to prevent cross-site-scripting attacks)
+
+<h3><a href="https://github.com/collections/static-site-generators" target="_blank">Static Site Generators</a></h3>
+
+A static site generator generates a static site.
+Typically, it will be possible to also write your content using Markdown, but at the same time, you will be able to edit your layout and include more elements yourself which the static site generator then uses to create your web page.
+Of course, this requires some basic knowledge about HTML, CSS and the static site generator you are using.
+You should also be familiar with the command line or using GitHub Actions yourself.
+
+<!--  style="background-color:#fff;" -->
+> ✅ Creates a lightweight web page
+> 
+> ✅ Very customizable
+> 
+> ❌ Not for complete beginners
+> 
+> ❌ Takes longer to get a first version running
+
+<h3><a href="https://jupyterbook.org/en/stable/intro.html" target="_blank"> JupyterBooks</a></h3>
+
+Jupyter Book is a free and open source tool to create online books.
+You can create sections and subsections that you can click through.
+They are added to a table of contents, which can be viewed in a sidebar or accessed via a menu.
+It is also possible to include executable content.
+Moreover, you can download your book in both Markdown and PDF format.
+You can start out with a template supplied by the software itself.
+
+<!--  style="background-color:#fff;" -->
+> ✅ Creates online books with sections and table of contents to click through
+> 
+> ✅ Allows lots of configuration and structuring
+> 
+> ✅ Supplies download as Markdown and PDF
+> 
+> ✅ Can include executable content
+> 
+> ❌ Not for complete beginners (you will need to run commands from the command line or create a GitHub Action)
+> 
+> ❌ Configuration is done via config files, which can be tricky to learn if you are unfamiliar with coding
 
 #### Markdown documents template
 This is the template that is described in this tutorial.
