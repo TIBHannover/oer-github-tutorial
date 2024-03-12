@@ -1,34 +1,54 @@
 # Create and publish OER with GitHub
+<section>
+
 We believe that open educational resources can be created using tools the open source community has been successfully using for many years now.
 This tutorial guides you through the creation of open educational resources (OER) with GitHub. Using our GitHub template, you can easily create and publish your own OER in just a few minutes.
 
-**What's in this tutorial:**
+> This is only a technical instruction. Please make sure to check and regard legal regulations of your country.
+
+## What's in this tutorial:
 
 * [Quick Start (< 5 minutes)](#quick-start)
 * [Step-by-step (< 10 minutes)](#requirements)
-
-    * [Requirements](#requirements)
-
-  * [Create a project](#create-a-project)
-  * [Fill with your own content](#fill-with-content)
-  * [Generate output](#generate-output)
-  * [Add your metadata](#add-your-metadata)
-  * [Insert into OERSI](#insert-your-oer-in-oersi)
 * [Reference](#reference)
-
-  * [Configuration options](#configuration-options)
-  * [Markdown](#markdown-1)
-  * [Git](#git)
-  * [Working offline](#working-offline)
-  * [Immediate update in OERSI](#immediate-update-in-oersi)
-  * [Different formats](#different-formats)
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
 
+## Possible formats
+This tutorial mainly describes our template. However, you could also use other formats.
+
+## Our template
+![Markdown Documents Template](img/template.png)
+
+Our Markdown documents template template allows you to quickly host your OER on GitHub Pages with just a few steps.
+A web page as well as different formats like PDF and epub are generated automatically with each change to your OER.
+
+[View this tutorial made with our template](https://tibhannover.github.io/oer-github-tutorial-template/)
+
+[Our template on GitHub](https://github.com/tibhannover/oer-github-tutorial-template/)
+
+## LiaScript
+![LiaScript](img/preview.png)
+
+LiaScript is what this tutorial is made with.
+All it takes for your OER to be displayed with LiaScript is a Markdown file hosted anywhere and is the quickest and easiest way to your first OER.
+
+[View LiaScript](https://liascript.github.io)
+
+## JupyterBook
+![JupyterBook](img/jupyterbook.png)
+
+JupyterBook is a program that can quickly create customizable books. It even allows to execute Python code in the form of Jupyter Notebooks.
+
+You can see the tutorial made with JupyterBook here: [Jupyter OER Tutorial](https://smatts.github.io/oer-tutorial-jupyter-book/00_intro.html)
+
+[View JupyterBook](https://jupyterbook.org)
+
 > After completing this tutorial, you will have an automatically generated OER with your own content and metadata, published on GitHub for free and ready to be put into our OER search index [OERSI](https://oersi.org).
 
+</section>
+
 ## Quick Start
-<section>
 
 > If you want to get started really quickly, you can follow this quick start tutorial and create a simple OER within just a few minutes.
 
@@ -42,6 +62,10 @@ Afterwards, log into your account.
 ### 2. Create your project
 > Create the place where your OER lies.
 
+<details>
+
+<summary><b>Markdown Documents Template (Click to enlarge)</b></summary>
+
 Go to the [Markdown Documents Template](https://github.com/TIBHannover/markdown-documents-template) and click on the green **Use this template** button, then on **Create a new repository**. This generated your own project (called `repository`).
 Assign the repository's owner to yourself (or to a group of your choice, if you are a member of one) and give it a short, but meaningful name that describes your OER. This name will also be the used for the URL to your OER. Optionally add a description.
 Make sure that the repository is set to **public**.
@@ -49,7 +73,34 @@ Lastly, confirm by clicking on **Create repository from template**.
 
 !?[Create repository from template](videos/create-from-template.mp4)
 
+</details>
+
+<details>
+
+<summary><b>LiaScript (Click to enlarge)</b></summary>
+
+Create a new repository on [GitHub](https://github.com) or [GitLab](https://gitlab.com).
+Assign the repository's owner to yourself (or to a group of your choice, if you are a member of one) and give it a short, but meaningful name that describes your OER. This name will also be the used for the URL to your OER. Optionally add a description.
+Make sure that the repository is set to **public**.
+
+</details>
+
+<details>
+
+<summary><b>JupyterBook (Click to enlarge)</b></summary>
+
+Go to the [Jupyter OER Template](https://github.com/smatts/jupyter-oer-template/tree/main) and click on the green **Use this template** button, then on **Create a new repository**. This generated your own project (called `repository`).
+Assign the repository's owner to yourself (or to a group of your choice, if you are a member of one) and give it a short, but meaningful name that describes your OER. This name will also be the used for the URL to your OER. Optionally add a description.
+Make sure that the repository is set to **public**.
+Lastly, confirm by clicking on **Create repository from template**. 
+
+</details>
+
 ### 3. Fill the project with your content
+
+<details>
+
+<summary><b>Markdown Documents Template (Click to enlarge)</b></summary>
 
 > Now that you have your own project/repository, you can fill it with your own content.
 
@@ -66,12 +117,63 @@ Now, in the top right corner, click on the green "Commit changes..." button. Wri
 
 You can also choose to create or delete files. If you do not want the four chapter files that were created by the template, you can click on the file, click on the three dots on the top right of the file, and then on "Delete file". To upload files, you can click on the "Add file" button in your repository.
 
+</details>
+
+<details>
+
+<summary><b>LiaScript (Click to enlarge)</b></summary>
+
+Create a Markdown file in your repository and fill it with your content.
+
+You can either create the file locally and upload it to GitHub, or create it directly on GitHub.
+
+</details>
+
+<details>
+
+<summary><b>JupyterBook (Click to enlarge)</b></summary>
+
+Currently, you have the template's dummy data in your repository. You can edit a file by clicking on the file and then on the edit button. The files you should edit are:
+
+* `00_intro.md`
+* `01_chapter.md`
+
+To edit a file, click on the file. Then in the top right corner, click on the pen symbol ("Edit this file"). You can delete the file's content and start writing something of your own.
+
+Now, in the top right corner, click on the green "Commit changes..." button. Write a short message on what you have changed ("Commit message"), if you want a longer description, and now click on the green "Commit changes" button.
+
+You can also choose to create or delete files. If you do not want the four chapter files that were created by the template, you can click on the file, click on the three dots on the top right of the file, and then on "Delete file". To upload files, you can click on the "Add file" button in your repository.
+
+</details>
+
 ### 4. Generate the OER
 > The automatic generation will take your content and generate different output formats.
+
+<details>
+
+<summary><b>Markdown Documents Template (Click to enlarge)</b></summary>
 
 Lastly, enable the automatic generation of your OER. To do this, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished. The generated documents are now created.
 
 !?[Pages](videos/pages.mp4)
+
+</details>
+
+<details>
+
+<summary><b>LiaScript (Click to enlarge)</b></summary>
+
+Simply go to the [LiaScript website](https://liascript.github.io) and paste the **raw** URL to your markdown file there. Now LiaScript generates your OER.
+
+</details>
+
+<details>
+
+<summary><b>JupyterBook (Click to enlarge)</b></summary>
+
+To build your book and view it online, you have to enable GitHub pages. To do this, go to the project's `Settings` -> `Pages` and in `Build and Development` set the source to `GitHub Actions`. After this, you can head to the `Actions` tab and click on the newest workflow run. If the worklow already ran, you will find that it failed. This happened because the Pages were not enabled yet. In this case, click on re-run jobs. Otherwise, wait until the jobs have finished.
+
+</details>
 
 ### 5. Add your metadata
 Go to our [Metadata Generator](https://oersi.gitlab.io/metadata-form/metadata-generator.html) and insert the metadata that describes your OER. In the top right corner, you have the option to switch the language between **German** ("DE") and **English** ("EN").
@@ -89,7 +191,6 @@ At the front page of your repository, inside the `README.md` content, there are 
 
 > To insert your OER into the OER search index [oersi.org](https://oersi.org), head to the `About` section in the index of your repository, click on the settings symbol and add `open-educational-resources` to `Topics`. Your course will be indexed at night and appear on the next day.
 
-</section>
 
 ## Step by step tutorial
 The step by step tutorial consists of the following steps, which you can click through either on the sidebar, using the arrows on the bottom or simply using the arrow keys on your keyboard.
@@ -488,10 +589,14 @@ Then, click on update. Your OER should now be updated in the OERSI.
 
 Using this template is not the only option to host OER using GitHub.
 For example, this tutorial runs using LiaScript.
+Moreover, you don't *have* to use GitHub as your hosting platform - other Git-based platforms like GitLab can be used, too (it is however necessary for most of the formats to have some sort of automated CI pipeline included in the Git hoster).
+We currently don't have templates with automated generation for other platforms, though.
 
 Below you find a short list of several possible formats your OER could use. <br><br>
 
-<h3><a href="https://github.com/TIBHannover/markdown-documents-template" target="_blank">Markdown documents template</a></h3>
+nicht unbedingt github
+
+<h3>[Markdown documents template](https://github.com/TIBHannover/markdown-documents-template)</h3>
 
 This is the template that is described in this tutorial.
 As you know by now, it takes your Markdown files, puts them together and generates different formats from them.
@@ -502,20 +607,22 @@ These formats are linked to and can be downloaded from the landing page that is 
 > 
 > ✅ Automatic generation of different formats
 > 
-> ✅ Can include executable elements
+> ✅ Can include interactive elements
 > 
 > ✅ Always have the newest changes online
 > 
-> ✅ Automatically tracks changes made to your files
+> ✅ GitHub automatically tracks changes made to your files
 > 
-> ✅ Easy collaboration with others
+> ✅ Easy collaboration with others on GitHub
+>
+> ✅ Customizable with CSS
 > 
 > ❌ Needs a GitHub account
 > 
-> ❌ Customizing can be tricky
+> ❌ Customizing can be tricky / Limited page layout customization ? textfluss gestaltung
 
 
-<h3><a href="https://github.com/TIBHannover/markdown-slides-template" target="_blank">Markdown slides template</a></h3>
+<h3>[Markdown slides template](https://github.com/TIBHannover/markdown-slides-template)</h3>
 
 The Markdown slides template is very similar to the Markdown documents template from this tutorial.
 But instead of creating a single text document, the slides template creates several slides.
@@ -538,7 +645,7 @@ For this, you create one Markdown file for one set of slides and the template ge
 > 
 > ❌ Needs a GitHub account
 
-<h3><a href="https://liascript.github.io" target="_blank">LiaScript</a></h3>
+<h3>[LiaScript](https://liascript.github.io)</h3>
 
 LiaScript takes a markdown file and automatically generates a course format from it.
 The tutorial you are currently viewing is actually made with LiaScript!
@@ -546,6 +653,12 @@ Or rather, the Markdown file this tutorial is written in is being interpreted by
 So all you really need is a Markdown file.
 
 <!--  style="background-color:#fff;" -->
+> ✅ Super easy to set up, just need one markdown file somewhere on the internet!
+> 
+> ✅ Runs everywhere 
+> 
+> ✅ Large number of elements you can use like: ... graphen, tabellen, karten, ...
+> 
 > ✅ No installation, everything happens live & online
 > 
 > ✅ Easy to click through the different sections
@@ -554,17 +667,15 @@ So all you really need is a Markdown file.
 > 
 > ✅ Interactive elements and extended Markdown can be used
 > 
+> ✅ responsive website, good mobile view
+> 
 > ❌ Only online, no download
 > 
-> ❌ Handling sections might be unintuitive (a new section starts a new subpage)
-> 
-> ❌ Only really suited for course/text/book formats
+> ❌ Depends on one single service
 > 
 > ❌ Only one Markdown file at a time
-> 
-> ❌ Including resources outside of Github might not work (to prevent cross-site-scripting attacks)
 
-<h3><a href="https://github.com/collections/static-site-generators" target="_blank">Static Site Generators</a></h3>
+<h3>[Static Site Generators](https://github.com/collections/static-site-generators)</h3>
 
 A static site generator generates a static site.
 Typically, it will be possible to also write your content using Markdown, but at the same time, you will be able to edit your layout and include more elements yourself which the static site generator then uses to create your web page.
@@ -576,11 +687,11 @@ You should also be familiar with the command line or using GitHub Actions yourse
 > 
 > ✅ Very customizable
 > 
-> ❌ Not for complete beginners
+> ❌ Not for complete beginners - you need some knowledge about web development
 > 
-> ❌ Takes longer to get a first version running
+> ❌ Takes longer to get a first version running / more configuration and technical know-how necessary
 
-<h3><a href="https://jupyterbook.org/en/stable/intro.html" target="_blank"> JupyterBooks</a></h3>
+<h3>[JupyterBooks](https://jupyterbook.org/en/stable/intro.html)</h3>
 
 Jupyter Book is a free and open source tool to create online books.
 You can create sections and subsections that you can click through.
