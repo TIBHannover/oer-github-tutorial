@@ -14,35 +14,45 @@ This tutorial guides you through the creation of open educational resources (OER
 * [Troubleshooting](#troubleshooting)
 * [FAQ](#faq)
 
-## Possible formats
-This tutorial mainly describes our template. However, you could also use other formats.
+<br>
 
-## Our template
-![Markdown Documents Template](img/template.png)
+## Possible formats for your OER
+This tutorial focuses on our template. However, you could also use other formats.
 
-Our Markdown documents template template allows you to quickly host your OER on GitHub Pages with just a few steps.
-A web page as well as different formats like PDF and epub are generated automatically with each change to your OER.
-
-[View this tutorial made with our template](https://tibhannover.github.io/oer-github-tutorial-template/)
-
-[Our template on GitHub](https://github.com/tibhannover/oer-github-tutorial-template/)
+<br>
 
 ## LiaScript
 ![LiaScript](img/preview.png)
 
+<br>
+
 LiaScript is what this tutorial is made with.
 All it takes for your OER to be displayed with LiaScript is a Markdown file hosted anywhere and is the quickest and easiest way to your first OER.
 
-[View LiaScript](https://liascript.github.io)
+[Go to LiaScript](https://liascript.github.io)
+
+<br>
+
+## Markdown documents template
+<a href="https://tibhannover.github.io/oer-github-tutorial-template/" target="_blank"><img src="img/template.png"/></a><br><br>
+
+Our Markdown documents template template allows you to quickly host your OER on GitHub Pages with just a few steps.
+A web page as well as different formats like PDF and epub are generated automatically with each change to your OER.
+
+You can see this tutorial made with our template here: [Template OER Tutorial](https://tibhannover.github.io/oer-github-tutorial-template/)
+
+[View our template on GitHub](https://github.com/tibhannover/oer-github-tutorial-template/)
+
+<br>
 
 ## JupyterBook
-![JupyterBook](img/jupyterbook.png)
+<a href="https://smatts.github.io/oer-tutorial-jupyter-book/00_intro.html" target="_blank"><img src="img/jupyterbook.png" /></a><br><br>
 
 JupyterBook is a program that can quickly create customizable books. It even allows to execute Python code in the form of Jupyter Notebooks.
 
-You can see the tutorial made with JupyterBook here: [Jupyter OER Tutorial](https://smatts.github.io/oer-tutorial-jupyter-book/00_intro.html)
+You can see this tutorial made with JupyterBook here: [Jupyter OER Tutorial](https://smatts.github.io/oer-tutorial-jupyter-book/00_intro.html)
 
-[View JupyterBook](https://jupyterbook.org)
+[Go to JupyterBook](https://jupyterbook.org)
 
 > After completing this tutorial, you will have an automatically generated OER with your own content and metadata, published on GitHub for free and ready to be put into our OER search index [OERSI](https://oersi.org).
 
@@ -50,7 +60,7 @@ You can see the tutorial made with JupyterBook here: [Jupyter OER Tutorial](http
 
 ## Quick Start
 
-> If you want to get started really quickly, you can follow this quick start tutorial and create a simple OER within just a few minutes.
+If you want to get started quickly, you can follow this quick start tutorial and create a simple OER within just a few minutes.
 
 ### 1. Create a GitHub account, if you don't have one yet
 > As we will host our OER on [GitHub](https://github.com/), a free GitHub account is required.
@@ -97,12 +107,11 @@ Lastly, confirm by clicking on **Create repository from template**.
 </details>
 
 ### 3. Fill the project with your content
+> Now that you have your own project/repository, you can fill it with your own content.
 
 <details>
 
 <summary><b>Markdown Documents Template (Click to enlarge)</b></summary>
-
-> Now that you have your own project/repository, you can fill it with your own content.
 
 Currently, you have the template's dummy data in your repository. You can edit a file by clicking on the file and then on the edit button. The files you should edit are:
 
